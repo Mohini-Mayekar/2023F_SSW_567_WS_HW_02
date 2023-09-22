@@ -18,10 +18,10 @@ class TestTriangles(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
     def testRightTriangleA(self): #T_02a_1
-        self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle')
+        self.assertEqual(classifyTriangle(3,4,5),'Right Scalene','3,4,5 is a Right angled scalene triangle')
 
     def testRightTriangleB(self): #T_02a_2
-        self.assertEqual(classifyTriangle(5,3,4),'Right','5,3,4 is a Right triangle')
+        self.assertEqual(classifyTriangle(5,3,4),'Right Scalene','5,3,4 is a Right angled scalene triangle')
         
     def testEquilateralTriangles(self): #T_02a_3
         self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
