@@ -12,7 +12,8 @@ def gitHubUserCommitDetails(repoList):
                 
         return commits.status_code
     except:
-         print("Error - in gitHubUserCommitDetails")
+        print("Error - in gitHubUserCommitDetails")
+        return 0
 
 #Method invoking GitHub repo list API
 def gitHubUserRepoDetails(ID):
@@ -29,10 +30,10 @@ def gitHubUserRepoDetails(ID):
                 statusCode = gitHubUserCommitDetails(repoList)                
             else:
                 print("No repositories present")
-        return statusCode
+        return 0 if (statusCode != 200) else statusCode
     except:
         print("Error - in gitHubUserRepoDetails")
-        
+        return 0
 
 if __name__ == '__main__':
     #Input from the user - user ID

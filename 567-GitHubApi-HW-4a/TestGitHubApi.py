@@ -27,9 +27,9 @@ class TestGitHubApi(unittest.TestCase):
         response = requests.get(commitUrl)
         assert response.status_code == 200
 
- #   def test_Forbidden_or_tooManyRequest(self):
- #       repoDetails = gitHubUserRepoDetails('Mohini-Mayekar')
- #       self.assertEqual(repoDetails, 0, "403")
+    def test_Forbidden_or_tooManyRequest(self):
+        repoDetails = gitHubUserRepoDetails('Mohini-Mayekar')
+        self.assertEqual(repoDetails, 0, "Error")
 
 
 if __name__ == '__main__':
