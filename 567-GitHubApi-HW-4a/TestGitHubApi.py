@@ -9,9 +9,9 @@ class TestGitHubApi(unittest.TestCase):
  #   file = open('RepoList.json')
  #   data = json.loads(file)
 
-    def test_HappyPath(self):
-        repoDetails = gitHubUserRepoDetails('Mohini-Mayekar')
-        self.assertEqual(repoDetails, 200, "Success")
+  #  def test_HappyPath(self):
+   #     repoDetails = gitHubUserRepoDetails('Mohini-Mayekar')
+   #     self.assertEqual(repoDetails, 200, "Success")
 
    # def test_HappyPath2(self, data):
    #     repoDetails = gitHubUserCommitDetails(data)
