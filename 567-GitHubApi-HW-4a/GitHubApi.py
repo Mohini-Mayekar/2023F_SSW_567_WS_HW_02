@@ -34,10 +34,11 @@ def gitHubUserRepoDetails(ID):
         print("Error - in gitHubUserRepoDetails")
         
 
-#Input from the user - user ID
-ID = input('Please enter GitHub User ID: ' )
+if __name__ == '__main__':
+    #Input from the user - user ID
+    ID = input('Please enter GitHub User ID: ' )
 
-print("User ID: " + ID)
+    print("User ID: " + ID)
 
-gitHubUserRepoDetails(ID)
+    gitHubUserRepoDetails(ID)
     
