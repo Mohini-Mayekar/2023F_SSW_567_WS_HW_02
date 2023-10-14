@@ -10,4 +10,4 @@ TIMEOUT = 20
 REPO_URL= "https://api.github.com/users/"+USER_ID+"/repos"
 COMMIT_URL = "https://api.github.com/repos/"+USER_ID+"/"+REPO+"/commits"
 
-FILE_PATH = "567-GitHubApi-HW-4a\\RepoList.json"
+FILE_PATH = "567-GitHubApi-HW-4a/RepoList.json"
