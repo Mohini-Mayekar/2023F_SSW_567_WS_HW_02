@@ -8,11 +8,16 @@ import requests
 from git_hub_api import git_hub_user_commit_details, git_hub_user_repo_details
 from constants import REPO_URL, COMMIT_URL, USER_ID, TIMEOUT, FILE_PATH
 
+sys.path.append('./567-GitHubApi-HW-4a')
+sys.path.append('./567-GitHubApi-HW-4a/test-results')
+
+import constants
+import RepoList
+
 class TestGitHubApi(unittest.TestCase):
     """Test cases for git_hub_api"""
 
-    sys.path.append('./567-GitHubApi-HW-4a')
-    sys.path.append('./567-GitHubApi-HW-4a/test-results')
+
 
     def load_data(self):
         """Function to load data from json file"""
