@@ -18,7 +18,7 @@ class TestGitHubApi(unittest.TestCase):
 
     def load_data(self):
         """Function to load data from json file"""
-        with open(FILE_PATH, "r", encoding="utf8") as file:
+        with open("567-GitHubApi-HW-4a\\repo_list.json", mode="r", encoding="utf8") as file:
             json_data = file.read()
         data = json.loads(json_data)
         return data
