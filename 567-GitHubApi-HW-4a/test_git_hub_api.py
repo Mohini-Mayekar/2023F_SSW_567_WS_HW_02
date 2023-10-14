@@ -1,6 +1,7 @@
 """Module containing test cases for invoking GitHub APIs"""
 
 import unittest
+import os
 import json
 import sys
 from unittest.mock import Mock, patch
@@ -18,7 +19,9 @@ class TestGitHubApi(unittest.TestCase):
 
     def load_data(self):
         """Function to load data from json file"""
-        with open("567-GitHubApi-HW-4a\\repo_list.json", mode="r", encoding="utf8") as file:
+        path = os.path.abspath("567-GitHubApi-HW-4a/repo_list.json")
+        
+        with open(path, mode="r", encoding="utf8") as file:
             json_data = file.read()
         data = json.loads(json_data)
         return data
